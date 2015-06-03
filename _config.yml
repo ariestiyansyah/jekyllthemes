@@ -10,5 +10,9 @@ paginate: 10
 markdown: rdiscount
 rdiscount:
     extensions: ['smart']
+    
+sass:
+  sass_dir: _sass
+  style: compressed
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
