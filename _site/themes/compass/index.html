@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
+  <title>Compass</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -15,7 +15,7 @@
   <header id="header">
     <div class="wrap">
 
-      <h1 id="logo"><a href="/">{{ site.name }}</a></h1>
+      <h1 id="logo"><a href="/">Jekyll Themes</a></h1>
 
     </div>
   </header>
@@ -29,7 +29,60 @@
     </div>
 
     <div id="content">
-        {{ content }}
+        <div id="post" class="container">
+
+	<div class="col-sm-6 postthumb">
+		<img src="/thumbnails/compass.png" />
+	</div>
+
+	<div class="col-sm-6">
+		<h1>Compass</h1>
+
+		<div class="meta clearfix">
+			<div id="author">
+				<strong>Author:</strong> Eduardo Rubio
+			</div>
+
+			
+				<div id="license">
+					<strong>License:</strong>
+					<a href="https://github.com/excentris/compass/blob/master/LICENSE">
+						MIT
+					</a>
+				</div>
+			
+
+			<div class="buttons">
+				
+					<a class="btn btn-default col-xs-6 col-sm-4 col-md-3" href="https://github.com/excentris/compass"><i class="fa fa-home"></i> Homepage</a>
+				
+
+				
+					<a class="btn btn-default col-xs-6 col-sm-4 col-md-3 col-md-offset-1" href="https://github.com/excentris/compass/archive/master.zip"><i class="fa fa-download"></i> Download</a>
+				
+
+				
+					<a class="btn btn-default col-xs-6 col-sm-4 col-md-3 col-md-offset-1" href="http://excentris.github.io/compass/"><i class="fa fa-road"></i> Demo</a>
+				
+			</div>
+		</div>
+	</div>
+
+
+	<div class="post-content col-xs-12">
+	<p>A simple and elegant personal landing page.</p>
+
+<ul>
+<li>Responsive design</li>
+<li>Mobile friendly</li>
+<li>Easy deployment to <a href="https://pages.github.com">GitHub Pages</a></li>
+</ul>
+
+
+	</div>
+
+</div>
+
     </div>
 
   </div>
@@ -50,7 +103,7 @@
         </div>
 
         <div id="copyright" class="col-sm-12 col-md-5">
-          Copyright &copy; {{ site.time | date: '%Y' }} Jekyll-Themes Community. Powered by <a href="http://jekyllrb.com">Jekyll</a>.
+          Copyright &copy; 2015 Jekyll-Themes Community. Powered by <a href="http://jekyllrb.com">Jekyll</a>.
           <br /><br />
           <iframe src="http://ghbtns.com/github-btn.html?user=ariestiyansyah&repo=jekyllthemes&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
           <iframe src="http://ghbtns.com/github-btn.html?user=ariestiyansyah&repo=jekyllthemes&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>

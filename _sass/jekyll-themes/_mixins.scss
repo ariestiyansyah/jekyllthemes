@@ -1,0 +1,20 @@
+@mixin a-variant($color) {
+  a,
+  a:hover,
+  a:focus,
+  a:active,
+  a.active {
+    outline: none;
+  }
+
+  a {
+    color: $color;
+  }
+
+  a:hover,
+  a:focus,
+  a:active,
+  a.active {
+    color: darken($color, 10%);
+  }
+}

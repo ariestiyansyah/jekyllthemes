@@ -1,0 +1,72 @@
+body {
+  color: $dark;
+  background-color: lighten( $dark, 60% );
+  @include a-variant($red);
+}
+
+header {
+  color: $white;
+  padding: 10px;
+  background-color: $dark;
+
+  #logo {
+    font-family: 'Playball', cursive;
+  }
+
+  h1 {
+    @include a-variant($white);
+    padding: 0px;
+    margin: 0px;
+
+    text-align: center;
+  }
+}
+
+ul {
+  margin: 0.75em 0;
+  padding: 0 1em;
+  list-style: none;
+}
+
+li:before {
+  content: "";
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
+}
+
+code {
+  color: $white;
+  background-color: $dark;
+}
+
+.row {
+  margin: 0 auto;
+}
+
+.container {
+  padding: 0px;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: lighten( $dark, 10% );
+  color: $white;
+
+  #copyright {
+    text-align: center;
+    padding-top: 10px;
+    
+    @media (max-width: $screen-md-min) {
+      background-color: $dark;
+    }
+  }
+}

@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
+  <title>Scribble</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -15,7 +15,7 @@
   <header id="header">
     <div class="wrap">
 
-      <h1 id="logo"><a href="/">{{ site.name }}</a></h1>
+      <h1 id="logo"><a href="/">Jekyll Themes</a></h1>
 
     </div>
   </header>
@@ -29,7 +29,53 @@
     </div>
 
     <div id="content">
-        {{ content }}
+        <div id="post" class="container">
+
+	<div class="col-sm-6 postthumb">
+		<img src="/thumbnails/scribble.png" />
+	</div>
+
+	<div class="col-sm-6">
+		<h1>Scribble</h1>
+
+		<div class="meta clearfix">
+			<div id="author">
+				<strong>Author:</strong> Mu-An Chiou
+			</div>
+
+			
+				<div id="license">
+					<strong>License:</strong>
+					<a href="https://github.com/muan/scribble/blob/master/LICENCE">
+						MIT License
+					</a>
+				</div>
+			
+
+			<div class="buttons">
+				
+					<a class="btn btn-default col-xs-6 col-sm-4 col-md-3" href="https://github.com/muan/scribble"><i class="fa fa-home"></i> Homepage</a>
+				
+
+				
+					<a class="btn btn-default col-xs-6 col-sm-4 col-md-3 col-md-offset-1" href="https://github.com/muan/scribble/archive/master.zip"><i class="fa fa-download"></i> Download</a>
+				
+
+				
+					<a class="btn btn-default col-xs-6 col-sm-4 col-md-3 col-md-offset-1" href="http://scribble.muan.co/2013/05/06/scribble-the-jekyll-theme/"><i class="fa fa-road"></i> Demo</a>
+				
+			</div>
+		</div>
+	</div>
+
+
+	<div class="post-content col-xs-12">
+	<p>There is no clever design philosophy to talk about, I tried to find something to work with, and ‘scribble’ came to my mind. This theme uses Open Sans powered by Google Web Fonts, and was written in plain HTML, SCSS &amp; CoffeeScript, though .scss &amp; .coffee files wouldn’t be included in the theme.</p>
+
+	</div>
+
+</div>
+
     </div>
 
   </div>
@@ -50,7 +96,7 @@
         </div>
 
         <div id="copyright" class="col-sm-12 col-md-5">
-          Copyright &copy; {{ site.time | date: '%Y' }} Jekyll-Themes Community. Powered by <a href="http://jekyllrb.com">Jekyll</a>.
+          Copyright &copy; 2015 Jekyll-Themes Community. Powered by <a href="http://jekyllrb.com">Jekyll</a>.
           <br /><br />
           <iframe src="http://ghbtns.com/github-btn.html?user=ariestiyansyah&repo=jekyllthemes&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
           <iframe src="http://ghbtns.com/github-btn.html?user=ariestiyansyah&repo=jekyllthemes&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>

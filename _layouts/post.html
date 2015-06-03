@@ -4,34 +4,45 @@ layout: default
 
 <div id="post" class="container">
 
-	<div class="postthumb"><img src="/thumbnails/{{ page.thumbnail }}" /></div>
+	<div class="col-sm-6 postthumb">
+		<img src="/thumbnails/{{ page.thumbnail }}" />
+	</div>
 
-	<h1>{{ page.title }}</h1>
+	<div class="col-sm-6">
+		<h1>{{ page.title }}</h1>
 
-	<div class="meta clearfix">
-		<strong>Author:</strong> {{ page.author }}
+		<div class="meta clearfix">
+			<div id="author">
+				<strong>Author:</strong> {{ page.author }}
+			</div>
 
-		{% if page.license %}
-			<br /><strong>License:</strong> {{ page.license }}
-		{% endif %}
+			{% if page.license %}
+				<div id="license">
+					<strong>License:</strong>
+					{% if page.license_link %}<a href="{{ page.license_link }}">{% endif %}
+						{{ page.license }}
+					{% if page.license_link %}</a>{% endif %}
+				</div>
+			{% endif %}
 
-		<br /><br />
-		{% if page.homepage %}
-			<a class="btn" href="{{ page.homepage }}"><i class="icon-home"></i> Homepage</a>
-		{% endif %}
-		{% if page.download %}
-			<a class="btn" href="{{ page.download }}"><i class="icon-download-alt"></i> Download</a>
-		{% endif %}
-		{% if page.demo %}
-			<a class="btn" href="{{ page.demo }}"><i class="icon-road"></i> Demo</a>
-		{% endif %}
-		{% if page.license_link %}
-			<a class="btn" href="{{ page.license_link }}"><i class="icon-file"></i> License</a>
-		{% endif %}
+			<div class="buttons">
+				{% if page.homepage %}
+					<a class="btn btn-default col-xs-6 col-sm-4 col-md-3" href="{{ page.homepage }}"><i class="fa fa-home"></i> Homepage</a>
+				{% endif %}
+
+				{% if page.download %}
+					<a class="btn btn-default col-xs-6 col-sm-4 col-md-3 col-md-offset-1" href="{{ page.download }}"><i class="fa fa-download"></i> Download</a>
+				{% endif %}
+
+				{% if page.demo %}
+					<a class="btn btn-default col-xs-6 col-sm-4 col-md-3 col-md-offset-1" href="{{ page.demo }}"><i class="fa fa-road"></i> Demo</a>
+				{% endif %}
+			</div>
+		</div>
 	</div>
 
 
-	<div class="post-content">
+	<div class="post-content col-xs-12">
 	{{ content }}
 	</div>
 
